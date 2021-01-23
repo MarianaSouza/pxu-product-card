@@ -1,2 +1,2 @@
-# pxu-product-card
+# Product Card
 Pixel Union Product Card Web App built in React
