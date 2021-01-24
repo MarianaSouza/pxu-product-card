@@ -1,7 +1,12 @@
 @import "./../../css/variables.scss";
 
-.list-wrapper{
-	background-color: $lightGrey;
-	color: $black;
-	
+
+.container-fluid{
+	&.list-wrapper{
+		background-color: $lightGrey;
+		color: $black;
+		padding: 8rem 6rem;
+	}
 }
+
+
