@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import ProductList from './components/ProductList';
 import './css/main.scss';
 
