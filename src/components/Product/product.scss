@@ -1,0 +1,71 @@
+@import "./../../css/variables.scss";
+
+.card {
+  margin: 4rem 3rem;
+  border: none;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    .product-selection {
+      position: relative;
+      img {
+        @include transition(opacity 0.3s ease-in-out);
+      }
+      .btn {
+        &.btn-primary {
+          &.add-cart {
+            display: none;
+            font-size: 1.6rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            border-color: $blue;
+            background-color: $blue;
+			padding: 0.5rem 2.5rem;
+          }
+        }
+      }
+      &:hover {
+        img {
+          opacity: 0.6;
+        }
+        .btn {
+          &.btn-primary {
+            &.add-cart {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+	margin: 2rem;
+	.card-body {
+		.product-selection {
+		  .btn {
+			&.btn-primary {
+			  &.add-cart {
+				display:block;
+				position:relative;
+				margin-top: 1.5rem;
+				margin-bottom: 1.5rem;
+			  }
+			}
+		  }
+		}
+	  }
+  }
+
+  .col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

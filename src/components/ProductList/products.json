@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"image": "/pxu-assets/shirt-1.jpg",
+		"alt" : "Blue Shirt",
+		"description": "Ultrafine Merino T-Shirt",
+		"price": "$80,00",
+		"rating": 4
+	},
+	{
+		"id": 2,
+		"image": "/pxu-assets/shirt-2.jpg",
+		"alt" : "Grey Shirt",
+		"description": "Ultrafine Merino T-Shirt",
+		"price": "$80,00",
+		"rating": 4
+	},
+	{
+		"id": 3,
+		"image": "/pxu-assets/shirt-3.jpg",
+		"alt" : "Orange Shirt",
+		"description": "Ultrafine Merino T-Shirt",
+		"price": "$80,00",
+		"rating": 5
+	}
+]

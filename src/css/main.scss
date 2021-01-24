@@ -1,7 +1,6 @@
 @import "bootstrap";
 @import "./variables.scss";
 
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -19,11 +18,10 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   margin: 0;
   background-color: $lightGrey;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -38,15 +36,7 @@ ul {
   padding: 0;
 }
 
-.card{
-  .card-body{
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 767px) {
-    .card{
-      margin-top: 1rem;
-    }
+p {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
 }
