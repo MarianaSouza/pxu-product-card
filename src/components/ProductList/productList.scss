@@ -1,0 +1,19 @@
+@import "./../../css/variables.scss";
+
+.container-fluid{
+	&.list-wrapper{
+		background-color: $lightGrey;
+		color: $black;
+		padding: 4rem;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container-fluid{
+		&.list-wrapper{
+			padding: 2rem;
+		}
+	}
+}
+
+

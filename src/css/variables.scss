@@ -1,0 +1,16 @@
+//Colors
+$lightGrey: #F2F2F2;
+$mediumGrey: #555555;
+$black: #212121;
+$white: #FFFFFF;
+$blue: #2258ad;
+
+
+//Mixin Transition
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
