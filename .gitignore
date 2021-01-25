@@ -28,3 +28,5 @@ yarn-error.log*
 *.css
 *.css.map
 
+# Bug on Chrome
+debug.log
