@@ -12,7 +12,7 @@ const Stars = ({ rating }) => {
   );
 };
 
-function Product({ product }) {
+function Product({ product, handleAdd }) {
   const { image, alt, description, price, rating } = product;
   return (
     <div className="col-md-4">
@@ -22,7 +22,7 @@ function Product({ product }) {
             <img src={image} alt={alt} className="img-fluid" />
             <button
               className="btn btn-primary add-cart"
-              onClick={() => alert("Product added to cart")}
+              onClick={() => handleAdd(product)}
             >
               Add to cart
             </button>
