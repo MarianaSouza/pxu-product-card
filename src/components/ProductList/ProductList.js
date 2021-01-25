@@ -1,14 +1,13 @@
 import React from "react";
 import Product from "../Product";
-import products from "./products.json";
 import "./productList.scss";
 
-function ProductList() {
+function ProductList({products}) {
   return (
     <div className="container-fluid list-wrapper">
-      <div className="row">
+      <div className="row no-gutters">
           {products.map((product) => {
-            return <Product key={product.id} image={product.image} alt={product.alt} description={product.description} price={product.price} product={product.rating} />;
+            return <Product key={product.id} product={product} />;
           })}
       </div>
     </div>

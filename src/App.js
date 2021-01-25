@@ -1,9 +1,10 @@
 import ProductList from './components/ProductList';
 import './css/main.scss';
+import products from "./shared-data/products.json";
 
 function App() {
   return (
-    <ProductList />
+    <ProductList products={products} />
   );
 }
 

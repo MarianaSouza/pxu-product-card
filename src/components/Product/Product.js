@@ -1,19 +1,36 @@
 import React from "react";
-import './product.scss';
+import "./product.scss";
 
-function Product({ image, alt, description, price, rating }) {
+const Stars = ({ rating }) => {
+  const allStars = [0, 1, 2, 3, 4];
   return (
-    <div className="col-md-6 no-gutters">
+    <div number-stars={rating} className="star-rating-wrapper">
+      {allStars.map((value) => {
+        return <span className="star" key={value} />;
+      })}
+    </div>
+  );
+};
+
+function Product({ product }) {
+  const { image, alt, description, price, rating } = product;
+  return (
+    <div className="col-md-4">
       <div className="card">
         <div className="card-body">
           <div className="product-selection">
             <img src={image} alt={alt} className="img-fluid" />
-            <button className="btn btn-primary add-cart" onClick={()=> alert("Product added to cart")}>Add to cart</button>
+            <button
+              className="btn btn-primary add-cart"
+              onClick={() => alert("Product added to cart")}
+            >
+              Add to cart
+            </button>
           </div>
           <div className="product-content">
             <p className="card-text">{description}</p>
-            <p>{price}</p>
-            <div>{rating}</div>
+            <p className="card-text">{price}</p>
+            <Stars rating={rating} />
           </div>
         </div>
       </div>
