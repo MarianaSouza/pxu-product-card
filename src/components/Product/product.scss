@@ -16,16 +16,18 @@
       .btn {
         &.btn-primary {
           &.add-cart {
-            display: none;
+            visibility: hidden;
+            opacity: 0;
             font-size: 1.6rem;
             position: absolute;
             top: 50%;
             left: 50%;
             -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-            border-color: $blue;
-            background-color: $blue;
+            border: none;
+            background-image: linear-gradient($lightBlue, $blue);
             padding: 0.5rem 2.5rem;
+            @include transition(visibility 0s, opacity 0.5s linear);
           }
         }
       }
@@ -36,7 +38,8 @@
         .btn {
           &.btn-primary {
             &.add-cart {
-              display: block;
+              visibility: visible;
+              opacity: 1;
             }
           }
         }
@@ -79,7 +82,11 @@
         .btn {
           &.btn-primary {
             &.add-cart {
-              display: block;
+              visibility: visible;
+              opacity: 1;
+              transform: unset;
+              top: 0;
+              left: 0;
               position: relative;
               margin-top: 1.5rem;
               margin-bottom: 1.5rem;
